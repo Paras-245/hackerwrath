@@ -1,0 +1,15 @@
+{
+  "name": "reboot",
+  "version": "1.0.0",
+  "description": "Reboot — Old hardware. New purpose. Minimal self-hosted web dashboard.",
+  "scripts": {
+    "dev": "concurrently -n \"server,client\" -c \"cyan,magenta\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "start": "npm --prefix server run start",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

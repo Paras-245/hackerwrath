@@ -1,0 +1,12 @@
+# Node
+node_modules/
+dist/
+.env
+*.log
+
+# Temp deployment workspaces
+/tmp/reboot-*
+
+# OS
+.DS_Store
+Thumbs.db
